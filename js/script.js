@@ -9,6 +9,11 @@ function handleGetData(event) {
             (data) => {
                 console.log(data);
                 $("#name").text(data.results[0].name)
+                $("#fullName").text(data.results[0].biography["full-name"])
+                $("#eye").text(data.results[0].appearance["eye-color"])
+                $("#gender").text(data.results[0].appearance["gender"])
+                $("#intelligence").text(data.results[0].powerstats.intelligence)
+                $("#picture").attr("src", data.results[0].image.url);
             },
 
             (error) => {
