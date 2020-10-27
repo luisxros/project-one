@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,17 +17,19 @@
         <h1>Super Information</h1>
     </header>
     <div class="sidebar">
-        <a  href="home.html">Home</a>
+        <a href="home.html">Home</a>
         <a class="active" href="index.html">Search</a>
         <a href="#about">About</a>
-      </div>
+    </div>
+
     <main class="flex-ctr">
         <section class="flex-ctr" id="collection">
+
             <h3>Name:</h3>
             <p id="name"></p>
             <h3>Full Name:</h3>
             <p id="fullName"></p>
-            <h3>Appearance:</h3> 
+            <h3>Appearance:</h3>
             <p>Eye-Color</p>
             <p id="eye"></p>
             <p>Gender</p>
@@ -34,12 +37,16 @@
             <h3>PowerStats:</h3>
             <p>Intelligence</p>
             <p id="intelligence"></p>
-            <img id="picture" src="" alt="">
 
         </section>
-        <form>
-            <input id="search" type="text" placeholder="Character Name"/>
-            <input type="submit" value="Search"/>
+        <aside>
+            <img id="picture" src="" alt="">
+        </aside>
+
+        <form id="bar">
+            <input id="search" type="text" placeholder="Character Name" />
+            <button>Search</button>
+        </form>
     </main>
     <footer>
         <p>Copyright &copy; All Rights Reserve 2020 Super Information</p>
