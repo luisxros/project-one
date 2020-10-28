@@ -2,77 +2,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 :root {
-    --first-color: ;
-    --second-color: ;
-    --third-color: ;
-    --fourth-color: ;
-    --font: 'Bangers', Cursive;
+  --first-color: ;
+  --second-color: ;
+  --third-color: ;
+  --fourth-color: ;
+  --font: 'Bangers', Cursive;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 body {
-    font-family: helvetica;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: helvetica;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-header, footer {
-    display: flex;
-    align-items: center;
-    color: white;
-    width: 100%;
-    height: 65px;
-    background-color: black;
+header,
+footer {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 65px;
+  background-color: black;
+  font-family: var(--font);
 }
 
 header {
-    padding-left: 10px;
-    font-family: var(--font);
-    justify-content: center;
-    
+  padding-left: 10px;
+  justify-content: center;
+  font-size: 25px;
+
 }
 
 footer {
-    justify-content: center;
+  justify-content: center;
+  bottom: 0px;
+  height: 30px;
+  width: 100%
 }
 
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: black;
-    position: fixed;
-    height: 100%;
-    font-family: var(--font);
-    
-  }
-  .sidebar a {
-    display: block;
-    color: white;
-    padding: 16px;
-    text-decoration: none;
-  }
-  
-  .sidebar a.active {
-    background-color: grey;
-    color: white;
+  margin: 0;
+  margin-top: 65px;
+  padding: 0;
+  width: 150px;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  font-family: var(--font);
+
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: grey;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
   }
 
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
+  .sidebar a {
+    float: left;
   }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
