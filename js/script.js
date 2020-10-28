@@ -12,7 +12,19 @@ function handleGetData(event) {
                 $("#fullName").text(data.results[0].biography["full-name"])
                 $("#eye").text(data.results[0].appearance["eye-color"])
                 $("#gender").text(data.results[0].appearance["gender"])
+                $("#hair").text(data.results[0].appearance["hair-color"])
+                $("#height").text(data.results[0].appearance["height"])
+                $("#race").text(data.results[0].appearance["race"])
+                $("#combat").text(data.results[0].powerstats.combat)
+                $("#durability").text(data.results[0].powerstats.durability)
                 $("#intelligence").text(data.results[0].powerstats.intelligence)
+                $("#power").text(data.results[0].powerstats.power)
+                $("#speed").text(data.results[0].powerstats.speed)
+                $("#strength").text(data.results[0].powerstats.strength)
+                $("#ga").text(data.results[0].connections["group-affiliation"])
+                $("#publisher").text(data.results[0].biography.publisher)
+                $("#fa").text(data.results[0].biography["first-appearance"])
+                $("#work").text(data.results[0].work.occupation)
                 $("#picture").attr("src", data.results[0].image.url);
             },
 
