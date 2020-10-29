@@ -17,7 +17,7 @@ a simple web application that displays super hero and villain information using 
 
 ## Getting started
 
-[Click here](url) to see the deployed app!
+[Click here](https://super-information.vercel.app/home.html) to see the deployed app!
 
 ## Future Enhancements
 
