@@ -78,6 +78,7 @@ h3 {
   position: fixed;
   height: 95%;
   font-family: var(--font);
+  font-size: 25px;
 
 }
 

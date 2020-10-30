@@ -59,6 +59,7 @@ main {
   position: fixed;
   height: 100%;
   font-family: var(--font);
+  font-size: 25px;
 
 }
 
@@ -118,4 +119,8 @@ main img {
 main p {
   font-size: 25px;
   margin-top: 15px;
+}
+
+section p > a {
+  color: white;
 }
