@@ -13,69 +13,76 @@
 </head>
 
 <body>
-    <header>
+    <header class="Header">
         <h1>Super Information</h1>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a class="active" href="search.html">Search</a>
+            </div>
+        </div>
     </header>
-    <div class="sidebar">
-        <a href="index.html">Home</a>
-        <a class="active" href="search.html">Search</a>
-    </div>
+    <div class="searchPage">
 
-    <main class="flex-ctr">
-        <section class="flex-dis" id="collection">
-
-            <h3>Name:</h3>
-            <p id="name"></p>
-            <h3>Full Name:</h3>
-            <p id="fullName"></p>
-            <h3>Appearance:</h3>
-            <p>Eye-Color:</p>
-            <p id="eye"></p>
-            <p>, Gender:</p>
-            <p id="gender"></p>
-            <p>, Hair-Color:</p>
-            <p id="hair"></p>
-            <p>, Height:</p>
-            <p id="height"></p>
-            <p>, Race:</p>
-            <p id="race"></p>
-            <h3>Powerstats:</h3>
-            <p>Combat:</p>
-            <p id="combat"></p>
-            <p>, Durability:</p>
-            <p id="durability"></p>
-            <p>, Intelligence:</p>
-            <p id="intelligence"></p>
-            <p>, Power:</p>
-            <p id="power"></p>
-            <p>, Speed:</p>
-            <p id="speed"></p>
-            <p>, Strength:</p>
-            <p id="strength"></p>
-            <h3>Group-Affiliation:</h3>
-            <p id="ga"></p>
-            <h3>Publisher:</h3>
-            <p id="publisher"></p>
-            <h3>First-Appearance:</h3>
-            <p id="fa"></p>
-            <h3>Occupation:</h3>
-            <p id="work"></p>
-
-
-        </section>
-        <section>
-            <form id="bar">
+        <div class="searchForm">
+            <form class="bar" id="bar">
                 <input id="search" type="text" placeholder="Character Name" />
                 <button>Search</button>
             </form>
-        </section>
-        <aside>
-            <img id="picture" src="" alt="">
-        </aside>
+        </div>
 
-    </main>
+        <div class="main-content">
+            <div class="Info" id="collection">
+                <h3>Name:</h3>
+                <p id="name"></p>
+                <h3>Full Name:</h3>
+                <p id="fullName"></p>
+                <h3>Appearance:</h3>
+                <h5>Eye-Color:</h5>
+                <p id="eye"></p>
+                <h5>Gender:</h5>
+                <p id="gender"></p>
+                <h5>Hair-Color:</h5>
+                <p id="hair"></p>
+                <h5>Height:</h5>
+                <p id="height"></p>
+                <h5>Race:</h5>
+                <p id="race"></p>
+                <h3>Powerstats:</h3>
+                <h5>Combat:</h5>
+                <p id="combat"></p>
+                <h5>Durability:</h5>
+                <p id="durability"></p>
+                <h5>Intelligence:</h5>
+                <p id="intelligence"></p>
+                <h5>Power:</h5>
+                <p id="power"></p>
+                <h5>Speed:</h5>
+                <p id="speed"></p>
+                <h5>Strength:</h5>
+                <p id="strength"></p>
+                <h3>Publisher:</h3>
+                <p id="publisher"></p>
+                <h3>First-Appearance:</h3>
+                <p id="fa"></p>
+                <h3>Occupation:</h3>
+                <p id="work"></p>
+                <h3>Group-Affiliation:</h3>
+                <p id="ga"></p>
+            </div>
+
+            <div class="picture">
+                <img id="picture" src="" alt="">
+            </div>
+
+        </div>
+
+      
+    </div>
+
     <footer>
-        <p>Copyright &copy; All Rights Reserve 2020 Super Information</p>
+        <p>Copyright &copy; All Rights Reserve 2021 Super Information</p>
     </footer>
 </body>
 
