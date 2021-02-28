@@ -32,7 +32,6 @@ body {
 
 .Header h1 {
   color: var(--first-color);
-  margin-left: 40%;
   font-size: 50px;
 }
 
@@ -170,11 +169,77 @@ footer {
   position: static;
   width: 100%;
   background-color: black;
+  bottom: 0;
   color: white;
   text-align: center;
   padding: 15px;
 }
 
 @media screen and (max-width: 700px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: black;
+    padding: 10px;
+  }
+
+  .Header h1 {
+    color: var(--first-color);
+    font-size: 20px;
+  }
+  footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: static;
+    font-size: 10px;
+  }
+
+  .searchPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .picture > img {
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  .Info {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .Info  p {
+    display: inline;
+    font-size: 15px;
+    margin: 5px;
+  }
+  
+  .Info h3 {
+    color: var(--second-color);
+    font-size: 30px;
+    margin: 5px;
+  }
+  .Info h5 {
+    color: var(--fourth-color);
+    font-size: 20px;
+    margin: 4px;
+  }
   
 }
