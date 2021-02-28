@@ -37,3 +37,12 @@ function handleGetData(event) {
 }
 
 $('form').on("submit", handleGetData)
+
+function toggleDrop() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
